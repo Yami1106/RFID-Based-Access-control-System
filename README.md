@@ -22,13 +22,7 @@
 
 **Get Started (Step-by-Step Guide):**
 
-1. **Hardware:** Gather the required components and follow the wiring instructions in the Arduino code.
+1. **Hardware:** Gather the required components and follow the wiring instructions in the Arduino code along with the pin diagram.
 2. **Software:** Upload the provided Arduino sketch to your Uno board.
 3. **Customization:** Update the `accessID` variable in the code with your authorized tags/cards.
 4. **Deployment:** Mount the system securely at your desired access point.
-
-**Additional Resources:**
-
-* Project code and detailed instructions on GitHub: [Link to your GitHub repository]
-* MFRC522 RFID reader documentation
-* LCD_I2C library information
