@@ -1,141 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RFID-Based Access Control System</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #f5f5f5;
-      margin: 0;
-      padding: 20px;
-    }
+## RFID-Based Access Control System
 
-    header {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+**Empowering Secure Entry with Wireless Identification Technology**
 
-    h1 {
-      font-size: 2.5em;
-      color: #222;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
+<p>Introducing a robust and user-friendly access control system built on the power of RFID (Radio-frequency identification) technology. This Arduino-powered project grants authorized access with a simple scan and deters unwanted entries with instant visual and audio feedback.</p>
 
-    .highlight {
-      color: #444;
-      font-weight: bold;
-    }
+**Features:**
 
-    .tagline {
-      font-size: 1.2em;
-      color: #666;
-      margin-top: 5px;
-    }
+* **Touchless Convenience:** Scan your authorized RFID tag or card for effortless entry.
+* **Visual Confirmation:** Green LED and "Access Granted" message on the LCD display validate authorized access.
+* **Auditory Alert:** Red LED and buzzer combination instantly deter unauthorized attempts.
+* **Customizable Security:** Define the authorized RFID IDs in the code for complete control.
+* **Clear Guidance:** LCD prompts like "Present Tag" guide users for seamless operation.
+* **Compact and Efficient:** Arduino platform offers a cost-effective and portable solution.
 
-    main {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
+**Applications:**
 
-    section {
-      width: 45%;
-      margin-bottom: 20px;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-    }
+* Secure home or office entry points
+* Restricted access to labs, workshops, or storage areas
+* Event management and guest registration
+* Time and attendance monitoring
 
-    h2 {
-      font-size: 1.8em;
-      margin-bottom: 10px;
-      color: #333;
-    }
+**Get Started (Step-by-Step Guide):**
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+1. **Hardware:** Gather the required components and follow the wiring instructions in the Arduino code.
+2. **Software:** Upload the provided Arduino sketch to your Uno board.
+3. **Customization:** Update the `accessID` variable in the code with your authorized tags/cards.
+4. **Deployment:** Mount the system securely at your desired access point.
 
-    li {
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
+**Additional Resources:**
 
-    .features li i {
-      color: #333;
-      font-size: 1.2em;
-      margin-right: 5px;
-    }
-
-    .applications li a {
-      color: #333;
-      text-decoration: none;
-      padding: 5px;
-      border: 1px solid #ddd;
-      border-radius: 3px;
-      margin-right: 5px;
-    }
-
-    /* Additional color effects */
-    .features {
-      background-color: #eee;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    }
-
-    .features li:hover {
-      background-color: #fafafa;
-    }
-
-    .applications li a:hover {
-      background-color: #eee;
-    }
-
-    .get-started {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .get-started p {
-      font-size: 1.4em;
-      margin-bottom: 15px;
-    }
-
-    .button {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    }
-
-    .button:hover {
-      background-color: #444;
-    }
-
-    /* Font Awesome icons (optional) */
-    .fa {
-      font-family: "Font Awesome 5 Free";
-      font-size: 1.2em;
-      margin-right: 5px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>
-      <span class="highlight">RFID-Based</span> Access Control System
-    </h1>
-    <p class="tagline">Secure your domain with effortless identification.</p>
-  </header>
-  <main>
-    <section class="features">
-      <h2>Key Features</h2>
-      <ul>
-        <li><i class="fa fa-lock"></i> Secure access with
+* Project code and detailed instructions on GitHub: [Link to your GitHub repository]
+* MFRC522 RFID reader documentation
+* LCD_I2C library information
