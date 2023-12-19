@@ -1,4 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RFID-Based Access Control System</title>
   <style>
     body {
       font-family: sans-serif;
@@ -7,23 +12,46 @@
       padding: 20px;
     }
 
-    h2 {
-      font-size: 2em;
+    header {
       text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
       color: #222;
-      margin-bottom: 10px;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
-    .section {
-      border-bottom: 1px solid #ddd;
-      padding: 20px 0;
+    .highlight {
+      color: #444;
+      font-weight: bold;
     }
 
-    h3 {
-      font-size: 1.5em;
-      margin-bottom: 5px;
-      color: #444;
+    .tagline {
+      font-size: 1.2em;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    section {
+      width: 45%;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: #333;
     }
 
     ul {
@@ -37,29 +65,43 @@
       font-weight: bold;
     }
 
-    .features li::before {
-      content: "\u2713";
+    .features li i {
       color: #333;
+      font-size: 1.2em;
       margin-right: 5px;
     }
 
-    .applications li {
-      display: inline-block;
-      margin-right: 10px;
+    .applications li a {
+      color: #333;
+      text-decoration: none;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      margin-right: 5px;
     }
 
-    .image-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 20px;
+    /* Additional color effects */
+    .features {
+      background-color: #eee;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     }
 
-    .image {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    .features li:hover {
+      background-color: #fafafa;
+    }
+
+    .applications li a:hover {
+      background-color: #eee;
+    }
+
+    .get-started {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .get-started p {
+      font-size: 1.4em;
+      margin-bottom: 15px;
     }
 
     .button {
@@ -76,31 +118,24 @@
     .button:hover {
       background-color: #444;
     }
+
+    /* Font Awesome icons (optional) */
+    .fa {
+      font-family: "Font Awesome 5 Free";
+      font-size: 1.2em;
+      margin-right: 5px;
+    }
   </style>
 </head>
-
 <body>
-  <h2><span style="color: #333;">RFID-Based Access Control System</span></h2>
-  <p><strong>Empowering Secure Entry with Wireless Identification Technology</strong></p>
-
-  <p>Introducing a robust and user-friendly access control system built on the power of RFID (Radio-frequency identification) technology. This Arduino-powered project grants authorized access with a simple scan and deters unwanted entries with instant visual and audio feedback.</p>
-
-  <div class="section">
-    <h3>Features</h3>
-    <ul class="features">
-      <li><span style="color: #222;">Touchless Convenience:</span> Scan your authorized RFID tag or card for effortless entry.</li>
-      <li><span style="color: #222;">Visual Confirmation:</span> Green LED and "Access Granted" message on the LCD display validate authorized access.</li>
-      <li><span style="color: #222;">Auditory Alert:</span> Red LED and buzzer combination instantly deter unauthorized attempts.</li>
-      <li><span style="color: #222;">Customizable Security:</span> Define the authorized RFID IDs in the code for complete control.</li>
-      <li><span style="color: #222;">Clear Guidance:</span> LCD prompts like "Present Tag" guide users for seamless operation.</li>
-      <li><span style="color: #222;">Compact and Efficient:</span> Arduino platform offers a cost-effective and portable solution.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h3>Applications</h3>
-    <ul class="applications">
-      <li><a href="#">Secure home or office entry points</a></li>
-      <li><a href="#">Restricted access to labs, workshops, or storage areas</a></li>
-      <li><a href="#">Event management and guest registration</a></li>
-      <li><a href="#">Time and attendance
+  <header>
+    <h1>
+      <span class="highlight">RFID-Based</span> Access Control System
+    </h1>
+    <p class="tagline">Secure your domain with effortless identification.</p>
+  </header>
+  <main>
+    <section class="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li><i class="fa fa-lock"></i> Secure access with
